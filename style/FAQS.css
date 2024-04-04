@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.navbar .navbar-nav .nav-item a{
+    padding: 15px;
+}
+.navbar{
+    color: transparent;
+}
+.navbar .navbar-nav .nav-but{
+    padding: 10px;
+}
+.nav-but{
+    background: black;
+    border-radius: 10px;
+}
+.nav-but a{
+    color: white;
+}
+.nav-but a:hover{
+    color: white;
+}
+/*--------------nav ends------------------*/
+
+/*--------------FAQs start---------------*/
+.jumbotron {
+    background-image: url(../img/figoratfaqs.jpg); /* Replace with your background image */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 190px 0;
+    text-align: center;
+}
+.head{
+    font-size: 50px;
+    font-weight: bold;
+}
+.graph{
+    font-size: 25px;
+}
+.faq{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 3%;
+}
+.faq-name{
+    flex: 0.5;
+    padding: 2% 2% 0 0;
+}
+.faq-header{
+    padding: 5% 0 0 0;
+    font-size: 40px;
+    letter-spacing: 2;
+}
+.faq-img{
+    width: 100%;
+    max-width: 400px;
+}
+.faq-box{
+    flex: 1;
+    min-width: 320px;
+    padding: 2% 0 4% 4%;
+    border-left: 2px solid black;
+}
+.faq-wrapper{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid black;
+}
+.faq-title{
+    display: block;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1.2;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+/*-----------creat arrow*----------*/
+.faq-title::after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(135deg);
+    transition: 0.4s ease-in-out;
+}
+.faq-detail{
+    line-height: 1.5;
+    letter-spacing: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+}
+.faq-trigger{
+    display: none;
+}
+.faq-trigger:checked + .faq-title + .faq-detail{
+    max-height: 300px;
+}
+.faq-trigger:checked + .faq-title::after{
+    transform: rotate(-45deg);
+    transition: 0.4s ease-in-out;
+}
+/*---------mobile-----------------*/
+@media screen and (max-width:680px) {
+    .faq-title{
+        font-size: 20px;
+    }
+}
+
+/*-------------JUMBOTRON----------*/
+/* join-figorate start */
+.join-figorate{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.join-headings{
+    line-height: 52.8px;
+    font-size: 48px;
+    font-weight: 500 !important;
+    font-family: 'Space Grotesk';
+}
+
+.join-connect{
+    line-height: 33.6px;
+    font-size: 24px;
+    font-weight: 500 !important;
+    font-family: 'Space Grotesk';
+}
+
+.btn-join-figo{
+    padding: 15px 48px;
+    border-radius: 10px;
+    background-color: #2C79CD;
+    font-size: 24px;
+    font-weight: 500 !important;
+    line-height: 33.6px;
+    color: white !important;
+    border: none !important;
+}
+@media screen and (max-width:1028px){
+    .join-headings{
+        line-height: 35px;
+        font-size: 32px;
+        font-weight: 500 !important;
+        font-family: 'Space Grotesk';
+    }  
+    .join-connect{
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: 500 !important;
+        font-family: 'Space Grotesk';
+    }
+    .btn-join-figo{
+        padding: 10px 30px;
+        border-radius: 10px;
+        background-color: #2C79CD;
+        font-size: 18px;
+        font-weight: 500 !important;
+        line-height: 25px;
+        color: white !important;
+        border: none !important;
+    }
+}
+
+
+
+/* footer section start */
+.footer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.footer-head{
+    font-weight: 600 !important;
+    line-height: 27.72px;
+    font-size: 22px;
+    font-family: 'Plus Jakatar Sans';
+}
+
+.footer-word{
+    font-size: 18px;
+    font-weight: 400 !important;
+    line-height: 25.2px;
+    font-family: 'Space Grotesk';
+}
+
+.nav-list{
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 600 !important;
+}
+
+.ul-list{
+    list-style-type: none !important;
+}
+
+.featuress{
+    margin-top: 50px;
+}
+
+.footer-listt{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.second-col{
+    margin-left: auto;
+}
+
+.fa-facebook{
+    font-size: 23px;
+    margin-right: 30px;
+}
+
+.fa-twitter{
+    font-size: 23px;
+    margin-right: 30px;
+}
+
+.fa-instagram{
+    font-size: 23px;
+    margin-right: 30px;
+}
+
+.fa-linkedin{
+    font-size: 23px;
+    margin-right: 30px;
+}
+@media screen and (max-width:1028px){
+    .footer-head{
+        font-weight: 500 !important;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: 'Plus Jakatar Sans';
+    }
+    .nav-list{
+        font-size: 16px;
+        line-height: 10px;
+        font-weight: 500 !important;
+        margin-bottom:8px;
+    }
+    .footer-listt{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-weight:500 !important; 
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .fa-facebook{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    
+    .fa-twitter{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    
+    .fa-instagram{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    
+    .fa-linkedin{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+  
+}
+/* footer section end */
